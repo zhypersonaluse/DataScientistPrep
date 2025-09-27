@@ -3,6 +3,7 @@
 - Don't assume anything. Ask clarifying questions. 
 There are multiple types of product sense questions
 - Type 1: Diagnose a problem or root cause analysis: When you saw a metric dropped X%, how would you investigate?\
+    -
      **Example Answer**
     - S1. What is the usage of this metric? Is this metric drop suddenly or is there a decreasing trend in this metric?
     - S2. I would like to investigate this problem through the following processes:
@@ -17,6 +18,9 @@ There are multiple types of product sense questions
 
 - Type 2: Whether launch a new product or not: When there is a new product, what should be done to determine whether the proposed product should be launched or not?
     -
+    **Example Answer**
+    - S1. What is the detailed functions of this new product? and what are the primary goals for this new product? For example, is this new product to provide some new functions to help improve user engagement? to reduce the learning path of a customer? Or just a brand new function to attract more users?
+    - S2.  
 
 - Ask Assumptions:
     - What are the goals of this new feature?
