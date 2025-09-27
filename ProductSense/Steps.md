@@ -2,7 +2,7 @@
 # Step 1 Clarify and Deconstruct the Problem
 - Don't assume anything. Ask clarifying questions. 
 There are multiple types of product sense questions
-- Type 1: Diagnose a problem or root cause analysis: When you saw a metric dropped X%, how would you investigate?
+- Type 1: Diagnose a problem or root cause analysis: When you saw a metric dropped X%, how would you investigate?\
      **Example Answer**
     - S1. What is the usage of this metric? Is this metric drop suddenly or is there a decreasing trend in this metric?
     - S2. I would like to investigate this problem through the following processes:
