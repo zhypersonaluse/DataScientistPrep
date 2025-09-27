@@ -3,7 +3,7 @@
 - Don't assume anything. Ask clarifying questions. 
 There are multiple types of product sense questions
 - Type 1: Diagnose a problem or root cause analysis: When you saw a metric dropped X%, how would you investigate?
-    - Example Answer:
+     **Example Answer**
     - S1. What is the usage of this metric? Is this metric drop suddenly or is there a decreasing trend in this metric?
     - S2. I would like to investigate this problem through the following processes:
         1. I would like to double check the data collection progress, to ensure there is no data error during ETL
@@ -15,6 +15,8 @@ There are multiple types of product sense questions
     - S3. Summerization
         Once the root cause is determined, we could evaluate how this metrics will affect the long term goal. If this change impact the long term goal, we could contact the counterparties for either a rollback or another round of strategy change.
 
+- Type 2: Whether launch a new product or not: When there is a new product, what should be done to determine whether the proposed product should be launched or not?
+    -
 
 - Ask Assumptions:
     - What are the goals of this new feature?
