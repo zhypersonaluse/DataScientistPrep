@@ -1,0 +1,29 @@
+Chapter 2: Running and Analyzing Experiments
+1.) Setting up the example
+Before we have any data, if we want to introduce a new feature, we'd better analyze what kinds of feedback the new feature could introduce, the feedback must on positive side and negative side. 
+Positive Side: It could increase the revenue and the profit
+Negative Side: It introduces complexity to the user which causes them to abandon a certain behavior
+
+Make trivial change to test and it's common to implement and evaluate trivial changes simultaneously. 
+To think simply, we could think the users' behavior in a funnel and the changes always target for improving a certain procedure in this funnel.
+Set up the hypothesis for the change
+Introduce goal metrics and it's best to normalized like XXX per user. But which users should be included in the normalization denominator? We should got back to the funnel steps, it's best to include the users who entered the specific procedures where the changes were implemented. Then we could add more content into the default hypothesis like" Making a change in this procedure will increase or decrease XXX per user for users who entering this specific procedures."
+
+2) Hypothesis testing: Establishing Statistical Significance
+1. Mean and Standard deviation. It's need to determine the experiment size. Increase experiment size by allocating more traffic to the variants or running the experiment longer to collect more data. Running the experiment user may not be effective after a few weeks(long term) because some metrics maybe volatile because of repeat users.
+Hypothesis testing. P value or confidence interval. One tail or two details depended on the null hypothesis. and statistical power(1- type ii errors) 80%-90%
+statistical significance versus practical significance(cost vs benefit) Whether the profit is enough to cover the cost to earn excess profit. Big company 0.2% maybe enough, start up may need 10%
+
+3) Designing the experiment
+a). What is the randomization unit? Usually Users. The users could be separated by language, geographic region, platform and device type.
+b). What population of randomization units do we want to target? It could be impacted by metric itself, percentage change(larger change could be detected by small sample size), P-value change(smaller p value needs larger sample size). 
+c). How large does our experiment need to be. Things need to consider during the experiment: i). How safe is the experiment, start with a smaller proportion of the users first then larger dataset. ii). Does this experiment need to share traffic with other experiments, and if so, how do you balance traffic requirements?
+d).how long do we run the experiments? i). More users: the longer the experiment runs, the more users. But the user accumulation should be sublinear as more users came multiple times.  ii). Day-of-Week effect: The users could act differently during weekdays and weekend. Run at least a week to capture the weekday effect and the weekend effect. iii). Seasonality: Results could be different given different times of the year. iv). Primary and novelty effects: in short term, the users may tend to try new things but the effects could decay in the long run. And it may take users time to learn the new things which could also contribute the short term metrics.
+Example Summary:
+a). The randomization unit is a user.
+b). We will target all users and analyze those who visit the checkout page.
+c). To have 80% power to detect at least a 1% change in revenue-per-user, we will conduct a power analysis to determine size
+d). This translates into running the experiment for a minimum of four days with a 34/33/33% split among Control/TreatOne/TreatTwo. We will run the experiment for a full week to ensure that we understand the day-of-week effect and potentially longer if we detect novelty or primacy effects.
+Notes: Overall power doesn't mean power in a specific sub segment. Like Overall users vs Canada users.
+
+4). Running the experiment and getting data
