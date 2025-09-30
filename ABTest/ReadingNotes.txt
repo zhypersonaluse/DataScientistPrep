@@ -27,3 +27,25 @@ d). This translates into running the experiment for a minimum of four days with 
 Notes: Overall power doesn't mean power in a specific sub segment. Like Overall users vs Canada users.
 
 4). Running the experiment and getting data
+Data From the logs or other instruments
+
+5). Interpreting the Results
+Sanity Check: guardrail metrics or invariants. These metrics should not change between the control and treatment. If they changed, any measured differences are likely the result of other changes we made rather than the feature being tested.
+Trust-related guardrail metrics:
+Organizational-related guardrail metrics: 
+if the sanity checks fail, a problem probably happened with the underlying experiment design, infrastructure or data processing.
+
+
+6) From Results to Decision
+Translate the results into a launch/no-launch decision. A decision needs to take in to consideration both the conclusion from the measurement and the broader context, such as:
+a). Tradeoffs between different metrics.
+b). What is the cost of launching the change. Like cost to build the new feature and cost to maintain the new feature. Could be treated as practice significance.
+c). What is the downside of making wrong decisions? Depends on the lifespan and opportunity cost.
+Statistical significance(SS) vs practical significance(PS)
+PS/SS 	Y				N	
+Y	Launch				More test
+N	balance cost and profit		No
+
+
+
+
